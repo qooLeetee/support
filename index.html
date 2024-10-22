@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Support</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__menu-button mob">
+            <svg class="header__menu-button__icon" viewBox="0 0 38 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="38" height="3" rx="1.5" fill="#7E81E3" />
+                <rect y="9" width="38" height="3" rx="1.5" fill="#7E81E3" />
+                <rect y="18" width="38" height="3" rx="1.5" fill="#7E81E3" />
+            </svg>
+        </button>
+        <svg class="header__logo" viewBox="0 0 264 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M56.6712 29.0308V11.0209C56.6712 2.40488 45.9301 -2.8464 37.6068 1.63663L9.05275 14.8216C3.88275 17.6515 0.729492 22.5526 0.729492 27.9206V45.9791C0.729492 54.5951 11.4706 59.8464 19.7939 55.3634L48.348 42.1881C53.5848 39.2999 56.6712 34.3987 56.6712 29.0308Z"
+                fill="#7E81E3" />
+            <path
+                d="M19.884 40V20.452H12.144V14.8H34.716V20.452H27.012V40H19.884ZM44.8708 40.324C42.7348 40.324 40.8388 39.892 39.1828 39.028C37.5268 38.164 36.2188 36.976 35.2588 35.464C34.3228 33.928 33.8548 32.176 33.8548 30.208C33.8548 28.24 34.3228 26.5 35.2588 24.988C36.2188 23.476 37.5268 22.3 39.1828 21.46C40.8388 20.596 42.7348 20.164 44.8708 20.164C47.0068 20.164 48.9028 20.596 50.5588 21.46C52.2388 22.3 53.5468 23.476 54.4828 24.988C55.4188 26.5 55.8868 28.24 55.8868 30.208C55.8868 32.176 55.4188 33.928 54.4828 35.464C53.5468 36.976 52.2388 38.164 50.5588 39.028C48.9028 39.892 47.0068 40.324 44.8708 40.324ZM44.8708 34.888C45.6628 34.888 46.3588 34.708 46.9588 34.348C47.5828 33.988 48.0748 33.46 48.4348 32.764C48.7948 32.044 48.9748 31.192 48.9748 30.208C48.9748 29.224 48.7948 28.396 48.4348 27.724C48.0748 27.028 47.5828 26.5 46.9588 26.14C46.3588 25.78 45.6628 25.6 44.8708 25.6C44.1028 25.6 43.4068 25.78 42.7828 26.14C42.1828 26.5 41.6908 27.028 41.3068 27.724C40.9468 28.396 40.7668 29.224 40.7668 30.208C40.7668 31.192 40.9468 32.044 41.3068 32.764C41.6908 33.46 42.1828 33.988 42.7828 34.348C43.4068 34.708 44.1028 34.888 44.8708 34.888Z"
+                fill="#FAFAFA" />
+            <path
+                d="M68.2354 40.504C66.1714 40.504 64.1794 40.252 62.2594 39.748C60.3634 39.22 58.8154 38.548 57.6154 37.732L59.9554 32.476C61.0834 33.196 62.3794 33.796 63.8434 34.276C65.3314 34.732 66.8074 34.96 68.2714 34.96C69.2554 34.96 70.0474 34.876 70.6474 34.708C71.2474 34.516 71.6794 34.276 71.9434 33.988C72.2314 33.676 72.3754 33.316 72.3754 32.908C72.3754 32.332 72.1114 31.876 71.5834 31.54C71.0554 31.204 70.3714 30.928 69.5314 30.712C68.6914 30.496 67.7554 30.28 66.7234 30.064C65.7154 29.848 64.6954 29.572 63.6634 29.236C62.6554 28.9 61.7314 28.468 60.8914 27.94C60.0514 27.388 59.3674 26.68 58.8394 25.816C58.3114 24.928 58.0474 23.812 58.0474 22.468C58.0474 20.956 58.4554 19.588 59.2714 18.364C60.1114 17.14 61.3594 16.156 63.0154 15.412C64.6714 14.668 66.7354 14.296 69.2074 14.296C70.8634 14.296 72.4834 14.488 74.0674 14.872C75.6754 15.232 77.1034 15.772 78.3514 16.492L76.1554 21.784C74.9554 21.136 73.7674 20.656 72.5914 20.344C71.4154 20.008 70.2754 19.84 69.1714 19.84C68.1874 19.84 67.3954 19.948 66.7954 20.164C66.1954 20.356 65.7634 20.62 65.4994 20.956C65.2354 21.292 65.1034 21.676 65.1034 22.108C65.1034 22.66 65.3554 23.104 65.8594 23.44C66.3874 23.752 67.0714 24.016 67.9114 24.232C68.7754 24.424 69.7114 24.628 70.7194 24.844C71.7514 25.06 72.7714 25.336 73.7794 25.672C74.8114 25.984 75.7474 26.416 76.5874 26.968C77.4274 27.496 78.0994 28.204 78.6034 29.092C79.1314 29.956 79.3954 31.048 79.3954 32.368C79.3954 33.832 78.9754 35.188 78.1354 36.436C77.3194 37.66 76.0834 38.644 74.4274 39.388C72.7954 40.132 70.7314 40.504 68.2354 40.504ZM90.572 40.324C88.988 40.324 87.56 40.012 86.288 39.388C85.04 38.764 84.056 37.792 83.336 36.472C82.64 35.128 82.292 33.436 82.292 31.396V20.488H89.132V30.28C89.132 31.792 89.408 32.872 89.96 33.52C90.536 34.168 91.34 34.492 92.372 34.492C93.044 34.492 93.656 34.336 94.208 34.024C94.76 33.712 95.204 33.22 95.54 32.548C95.876 31.852 96.044 30.964 96.044 29.884V20.488H102.884V40H96.368V34.492L97.628 36.04C96.956 37.48 95.984 38.56 94.712 39.28C93.44 39.976 92.06 40.324 90.572 40.324ZM119.566 40.324C117.91 40.324 116.494 39.964 115.318 39.244C114.142 38.5 113.242 37.396 112.618 35.932C112.018 34.444 111.718 32.548 111.718 30.244C111.718 27.916 112.006 26.02 112.582 24.556C113.158 23.068 114.022 21.964 115.174 21.244C116.35 20.524 117.814 20.164 119.566 20.164C121.342 20.164 122.95 20.584 124.39 21.424C125.854 22.24 127.006 23.404 127.846 24.916C128.71 26.404 129.142 28.18 129.142 30.244C129.142 32.308 128.71 34.096 127.846 35.608C127.006 37.12 125.854 38.284 124.39 39.1C122.95 39.916 121.342 40.324 119.566 40.324ZM107.29 46.984V20.488H113.806V23.8L113.77 30.244L114.13 36.724V46.984H107.29ZM118.126 34.888C118.894 34.888 119.578 34.708 120.178 34.348C120.802 33.988 121.294 33.46 121.654 32.764C122.038 32.068 122.23 31.228 122.23 30.244C122.23 29.26 122.038 28.42 121.654 27.724C121.294 27.028 120.802 26.5 120.178 26.14C119.578 25.78 118.894 25.6 118.126 25.6C117.358 25.6 116.662 25.78 116.038 26.14C115.438 26.5 114.946 27.028 114.562 27.724C114.202 28.42 114.022 29.26 114.022 30.244C114.022 31.228 114.202 32.068 114.562 32.764C114.946 33.46 115.438 33.988 116.038 34.348C116.662 34.708 117.358 34.888 118.126 34.888ZM144.597 40.324C142.941 40.324 141.525 39.964 140.349 39.244C139.173 38.5 138.273 37.396 137.649 35.932C137.049 34.444 136.749 32.548 136.749 30.244C136.749 27.916 137.037 26.02 137.613 24.556C138.189 23.068 139.053 21.964 140.205 21.244C141.381 20.524 142.845 20.164 144.597 20.164C146.373 20.164 147.981 20.584 149.421 21.424C150.885 22.24 152.037 23.404 152.877 24.916C153.741 26.404 154.173 28.18 154.173 30.244C154.173 32.308 153.741 34.096 152.877 35.608C152.037 37.12 150.885 38.284 149.421 39.1C147.981 39.916 146.373 40.324 144.597 40.324ZM132.321 46.984V20.488H138.837V23.8L138.801 30.244L139.161 36.724V46.984H132.321ZM143.157 34.888C143.925 34.888 144.609 34.708 145.209 34.348C145.833 33.988 146.325 33.46 146.685 32.764C147.069 32.068 147.261 31.228 147.261 30.244C147.261 29.26 147.069 28.42 146.685 27.724C146.325 27.028 145.833 26.5 145.209 26.14C144.609 25.78 143.925 25.6 143.157 25.6C142.389 25.6 141.693 25.78 141.069 26.14C140.469 26.5 139.977 27.028 139.593 27.724C139.233 28.42 139.053 29.26 139.053 30.244C139.053 31.228 139.233 32.068 139.593 32.764C139.977 33.46 140.469 33.988 141.069 34.348C141.693 34.708 142.389 34.888 143.157 34.888ZM167.144 40.324C165.008 40.324 163.112 39.892 161.456 39.028C159.8 38.164 158.492 36.976 157.532 35.464C156.596 33.928 156.128 32.176 156.128 30.208C156.128 28.24 156.596 26.5 157.532 24.988C158.492 23.476 159.8 22.3 161.456 21.46C163.112 20.596 165.008 20.164 167.144 20.164C169.28 20.164 171.176 20.596 172.832 21.46C174.512 22.3 175.82 23.476 176.756 24.988C177.692 26.5 178.16 28.24 178.16 30.208C178.16 32.176 177.692 33.928 176.756 35.464C175.82 36.976 174.512 38.164 172.832 39.028C171.176 39.892 169.28 40.324 167.144 40.324ZM167.144 34.888C167.936 34.888 168.632 34.708 169.232 34.348C169.856 33.988 170.348 33.46 170.708 32.764C171.068 32.044 171.248 31.192 171.248 30.208C171.248 29.224 171.068 28.396 170.708 27.724C170.348 27.028 169.856 26.5 169.232 26.14C168.632 25.78 167.936 25.6 167.144 25.6C166.376 25.6 165.68 25.78 165.056 26.14C164.456 26.5 163.964 27.028 163.58 27.724C163.22 28.396 163.04 29.224 163.04 30.208C163.04 31.192 163.22 32.044 163.58 32.764C163.964 33.46 164.456 33.988 165.056 34.348C165.68 34.708 166.376 34.888 167.144 34.888ZM181.329 40V20.488H187.845V26.176L186.873 24.556C187.449 23.092 188.385 22 189.681 21.28C190.977 20.536 192.549 20.164 194.397 20.164V26.32C194.085 26.272 193.809 26.248 193.569 26.248C193.353 26.224 193.113 26.212 192.849 26.212C191.457 26.212 190.329 26.596 189.465 27.364C188.601 28.108 188.169 29.332 188.169 31.036V40H181.329ZM206.529 40.324C204.033 40.324 202.089 39.712 200.697 38.488C199.305 37.24 198.609 35.368 198.609 32.872V16.132H205.449V32.8C205.449 33.496 205.641 34.048 206.025 34.456C206.409 34.84 206.901 35.032 207.501 35.032C208.317 35.032 209.013 34.828 209.589 34.42L211.281 39.208C210.705 39.592 209.997 39.868 209.157 40.036C208.317 40.228 207.441 40.324 206.529 40.324ZM195.765 26.32V21.208H209.913V26.32H195.765ZM217.15 40.324C215.998 40.324 215.026 39.94 214.234 39.172C213.442 38.404 213.046 37.432 213.046 36.256C213.046 35.032 213.442 34.06 214.234 33.34C215.026 32.596 215.998 32.224 217.15 32.224C218.302 32.224 219.274 32.596 220.066 33.34C220.858 34.06 221.254 35.032 221.254 36.256C221.254 37.432 220.858 38.404 220.066 39.172C219.274 39.94 218.302 40.324 217.15 40.324ZM224.466 40V20.488H230.982V26.176L230.01 24.556C230.586 23.092 231.522 22 232.818 21.28C234.114 20.536 235.686 20.164 237.534 20.164V26.32C237.222 26.272 236.946 26.248 236.706 26.248C236.49 26.224 236.25 26.212 235.986 26.212C234.594 26.212 233.466 26.596 232.602 27.364C231.738 28.108 231.306 29.332 231.306 31.036V40H224.466ZM248.634 40.324C247.05 40.324 245.622 40.012 244.35 39.388C243.102 38.764 242.118 37.792 241.398 36.472C240.702 35.128 240.354 33.436 240.354 31.396V20.488H247.194V30.28C247.194 31.792 247.47 32.872 248.022 33.52C248.598 34.168 249.402 34.492 250.434 34.492C251.106 34.492 251.718 34.336 252.27 34.024C252.822 33.712 253.266 33.22 253.602 32.548C253.938 31.852 254.106 30.964 254.106 29.884V20.488H260.946V40H254.43V34.492L255.69 36.04C255.018 37.48 254.046 38.56 252.774 39.28C251.502 39.976 250.122 40.324 248.634 40.324Z"
+                fill="#30303E" />
+        </svg>
+        <ul class="header__nav">
+            <li class="header__nav__item"><a href="#">Услуги</a></li>
+            <li class="header__nav__item"><a href="#">Технологии</a></li>
+            <li class="header__nav__item"><a href="#">Продвижение</a></li>
+            <li class="header__nav__item"><a href="#">Портфолио и отзывы</a></li>
+            <li class="header__nav__item"><a href="#">О Компании</a></li>
+        </ul>
+        <a href="" class="header__call-back__button-mob mob">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.5317 12.4724C15.5208 16.4604 16.4258 11.8467 18.9656 14.3848C21.4143 16.8328 22.8216 17.3232 19.7192 20.4247C19.3306 20.737 16.8616 24.4943 8.1846 15.8197C-0.493478 7.144 3.26158 4.67244 3.57397 4.28395C6.68387 1.17385 7.16586 2.58938 9.61449 5.03733C12.1544 7.5765 7.54266 8.48441 11.5317 12.4724Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <div href="" class="header__call-back">
+            <div class="header__call-back__number">+7 495 543-66-70</div>
+            <a href="#" class="header__call-back__button">Обратный звонок</a>
+        </div>
+        <div class="header__menu mob">
+            <div class="header__menu__wrapper">
+                <ul class="header__menu__nav">
+                    <li class="header__menu__nav__item"><a href="#">Услуги</a></li>
+                    <li class="header__menu__nav__item"><a href="#">Технологии</a></li>
+                    <li class="header__menu__nav__item"><a href="#">Продвижение</a></li>
+                    <li class="header__menu__nav__item"><a href="#">Портфолио и отзывы</a></li>
+                    <li class="header__menu__nav__item"><a href="#">О Компании</a></li>
+                </ul>
+                <div class="header__menu__number">
+                    +7 495 543-66-70
+                </div>
+                <button class="header__menu__close-button">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 1L1 14" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 1L14 14" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="description">
+            <img src="./assets/images/description/desctiption-bg-desk.png" alt="" class="background-image desk">
+            <img src="./assets/images/description/desctiption-bg-mob.png" alt="" class="background-image mob">
+            <div class="container">
+                <div class="description__heading">
+                    <p>Более 10 лет занимаемся</p> веб разработкой, сопровождением и продвижением сайтов
+                </div>
+                <div class="description__supheading">
+                    Мы являемся сервисным IT-партнером, который предлагает свои услуги субподряда рекламным и
+                    digital-агентствам, так и напрямую в качестве подрядчика.
+                </div>
+                <div class="description__buttons">
+                    <a href="#" class="description__buttons__consultation">Забронировать консультацию</a>
+                    <a href="#" class="description__buttons__download">Скачать презентацию</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="trust-us">
+                    <div class="trust-us__heading">Нам доверяют:</div>
+                    <div class="trust-us__scroll">
+                        <img src="./assets/images/services/scroll/1.png" alt="">
+                        <img src="./assets/images/services/scroll/2.png" alt="">
+                        <img src="./assets/images/services/scroll/3.png" alt="">
+                        <img src="./assets/images/services/scroll/4.png" alt="">
+                        <img src="./assets/images/services/scroll/5.png" alt="">
+                        <img src="./assets/images/services/scroll/6.png" alt="">
+                    </div>
+                </div>
+                <div class="services__heading">Наши услуги</div>
+                <ul class="services__list">
+                    <il class="services__list__item">
+                        <button class="services__list__item__heading">
+                            <div class="services__list__item__title">Разработка сайтов и Web-сервисов</div>
+                            <svg class="services__list__item__arrow" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 16.1461L8.89474 8.57307L1 1" stroke="white" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </il>
+                    <il class="services__list__item">
+                        <button class="services__list__item__heading">
+                            <div class="services__list__item__title">Администирование серверов</div>
+                            <svg class="services__list__item__arrow" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 16.1461L8.89474 8.57307L1 1" stroke="white" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                    </il>
+                    <il class="services__list__item">
+                        <button class="services__list__item__heading">
+                            <div class="services__list__item__title">Дизайн</div>
+                            <svg class="services__list__item__arrow" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 16.1461L8.89474 8.57307L1 1" stroke="white" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="services__list__item__content">
+                            <div class="services__list__item__content__text">
+                                Осуществляем разработку веб сайтов и лендингов на CMS Wordpress, Bitrix, Drupal,
+                                Octobercms.
+                                Разрабатываем интернет-магазины с использованием e-commerce платформ Woocommerce и
+                                Shopify. Занимаемся разработкой
+                                сервисов на фреймворках Laravel, Yii2, с реализацией фронтенда на технологиях
+                                Vue.js,
+                                React.js, Next.js
+                            </div>
+                            <ul class="services__list__item__content__tags-list">
+                                <li class="services__list__item__content__tags-list__tag">
+                                    CTO, PM, QA могут быть включены
+                                </li>
+                                <li class="services__list__item__content__tags-list__tag">
+                                    Многопрофильная команда
+                                </li>
+                                <li class="services__list__item__content__tags-list__tag">
+                                    Гарантия отсутствия ошибок и после запуска поддерживать
+                                </li>
+                                <li class="services__list__item__content__tags-list__tag">
+                                    Разработка согласно dev. стандарты
+                                </li>
+                            </ul>
+                            <img src="./assets/images/services/design.png" alt=""
+                                class="services__list__item__content__image">
+                        </div>
+                    </il>
+                    <il class="services__list__item">
+                        <button class="services__list__item__heading">
+                            <div class="services__list__item__title">Продвижение в поисковых системах</div>
+                            <svg class="services__list__item__arrow" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 16.1461L8.89474 8.57307L1 1" stroke="white" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </il>
+                    <il class="services__list__item">
+                        <button class="services__list__item__heading">
+                            <div class="services__list__item__title">Контекстная и таргетированная реклама</div>
+                            <svg class="services__list__item__arrow" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 16.1461L8.89474 8.57307L1 1" stroke="white" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                    </il>
+                </ul>
+            </div>
+        </section>
+
+        <section class="how-work">
+            <div class="container">
+                <div class="how-work__heading">Как мы работаем</div>
+                <div class="how-work__description">
+                    <div class="how-work__description__item">
+                        <div class="how-work__description__item__title calc">Проектные работы по оценке</div>
+                        <div class="how-work__description__item__text">
+                            На старте мы оцениваем проект в часах и называем
+                            итоговую стоимость работ. При этом стоимость зависит от вида услуг
+                        </div>
+                    </div>
+                    <div class="how-work__description__item">
+                        <div class="how-work__description__item__title time">Покупка часов</div>
+                        <div class="how-work__description__item__text">
+                            Мы выделяем необходимых специалистов под ваш проект и
+                            к оплате идет фактически потраченное ими время
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology">
+            <div class="container">
+                <div class="technology__heading">Технологии</div>
+                <div class="technology__grid">
+                    <div class="technology__grid__item">
+                        <div class="technology__grid__item__title">Аналитика</div>
+                        <div class="technology__grid__item__list">
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/analytic/1.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Выбор технологического стека
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/analytic/2.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Проектирование архитектуры и рефакторинг
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/analytic/3.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Анализ требований и формирование ТЗ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technology__grid__item">
+                        <div class="technology__grid__item__title">Backend</div>
+                        <div class="technology__grid__item__list">
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/backend/1.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Битрикс
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/backend/2.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Laravel
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/backend/3.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Custom
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technology__grid__item">
+                        <div class="technology__grid__item__title">Frontend</div>
+                        <div class="technology__grid__item__list">
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/frontend/Pixel.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Верстка PixelPerfect
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/frontend/Vue.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Vue
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/frontend/React.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                React
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/frontend/Electron.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Electron
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/frontend/Cordova.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Cordova
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technology__grid__item">
+                        <div class="technology__grid__item__title">DevOps</div>
+                        <div class="technology__grid__item__list">
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/GitLab.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Gitlab CI
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/Docker.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Docker
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/Kubernetes.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Kubernetes
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/DigitalCloud.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Облака
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/CloudLib.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Self-hosted
+                            </div>
+                            <div class="technology__grid__item__list__item">
+                                <img src="./assets/icons/technology/devops/ForceTest.svg" alt=""
+                                    class="technology__grid__item__list__item__icon">
+                                Нагрузочное тестирование
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- <section class="projects"></section> -->
+
+        <section class="comp-promotion">
+            <div class="container">
+                <div class="comp-promotion__heading">Комплексное продвижение</div>
+                <div class="comp-promotion__supheading">
+                    Привлечение и удержание посетителей на вашем сайте - важнейшая задача, которая решается с помощью
+                    комплексного
+                    продвижения. Мы предлагаем интегрированный подход, объединяющий в себе эффективные маркетинговые
+                    стратегии и технические
+                    инструменты для достижения максимальных результатов.
+                </div>
+                <div class="comp-promotion__category">
+                    <div class="comp-promotion__category__column">
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.10495 15.2102C7.7586 15.4693 8.30051 15.9497 8.63613 16.5676C8.97175 17.1855 9.07975 17.9016 8.9413 18.5909C8.80285 19.2803 8.42673 19.8992 7.87858 20.3396C7.33043 20.7799 6.64505 21.0138 5.94204 21.0005C5.23903 20.9871 4.56303 20.7273 4.032 20.2665C3.50098 19.8056 3.14864 19.1729 3.03648 18.4787C2.92432 17.7846 3.05945 17.0731 3.4183 16.4685C3.77715 15.8638 4.33692 15.4043 4.99995 15.1702V8.83023C4.33245 8.59432 3.76985 8.13003 3.41159 7.51942C3.05332 6.90881 2.92246 6.1912 3.04213 5.49344C3.16181 4.79567 3.52431 4.16268 4.06557 3.70635C4.60683 3.25002 5.29199 2.99974 5.99995 2.99974C6.7079 2.99974 7.39306 3.25002 7.93432 3.70635C8.47558 4.16268 8.83808 4.79567 8.95776 5.49344C9.07743 6.1912 8.94657 6.90881 8.58831 7.51942C8.23004 8.13003 7.66744 8.59432 6.99995 8.83023V12.0002C7.83595 11.3722 8.87395 11.0002 9.99995 11.0002H13.9999C14.6581 11.0003 15.2979 10.7839 15.821 10.3846C16.3441 9.98528 16.7215 9.42506 16.8949 8.79023C16.2381 8.53013 15.6941 8.04666 15.3587 7.42492C15.0233 6.80318 14.9179 6.08304 15.0612 5.39128C15.2045 4.69952 15.5873 4.08049 16.1421 3.64317C16.6969 3.20585 17.3882 2.97827 18.0943 3.00051C18.8004 3.02275 19.476 3.29338 20.0022 3.76475C20.5284 4.23611 20.8714 4.87801 20.9709 5.57741C21.0704 6.27682 20.92 6.9889 20.5461 7.5883C20.1722 8.1877 19.5988 8.63598 18.9269 8.85423C18.7255 10.0149 18.1209 11.0672 17.2195 11.8257C16.3182 12.5842 15.178 13.0001 13.9999 13.0002H9.99995C9.34184 13.0002 8.70196 13.2165 8.17885 13.6158C7.65575 14.0152 7.27841 14.5754 7.10495 15.2102ZM5.99995 17.0002C5.73473 17.0002 5.48038 17.1056 5.29284 17.2931C5.1053 17.4807 4.99995 17.735 4.99995 18.0002C4.99995 18.2654 5.1053 18.5198 5.29284 18.7073C5.48038 18.8949 5.73473 19.0002 5.99995 19.0002C6.26516 19.0002 6.51952 18.8949 6.70705 18.7073C6.89459 18.5198 6.99995 18.2654 6.99995 18.0002C6.99995 17.735 6.89459 17.4807 6.70705 17.2931C6.51952 17.1056 6.26516 17.0002 5.99995 17.0002ZM5.99995 5.00023C5.73473 5.00023 5.48038 5.10558 5.29284 5.29312C5.1053 5.48066 4.99995 5.73501 4.99995 6.00023C4.99995 6.26544 5.1053 6.5198 5.29284 6.70733C5.48038 6.89487 5.73473 7.00023 5.99995 7.00023C6.26516 7.00023 6.51952 6.89487 6.70705 6.70733C6.89459 6.5198 6.99995 6.26544 6.99995 6.00023C6.99995 5.73501 6.89459 5.48066 6.70705 5.29312C6.51952 5.10558 6.26516 5.00023 5.99995 5.00023ZM17.9999 5.00023C17.7347 5.00023 17.4804 5.10558 17.2928 5.29312C17.1053 5.48066 16.9999 5.73501 16.9999 6.00023C16.9999 6.26544 17.1053 6.5198 17.2928 6.70733C17.4804 6.89487 17.7347 7.00023 17.9999 7.00023C18.2652 7.00023 18.5195 6.89487 18.7071 6.70733C18.8946 6.5198 18.9999 6.26544 18.9999 6.00023C18.9999 5.73501 18.8946 5.48066 18.7071 5.29312C18.5195 5.10558 18.2652 5.00023 17.9999 5.00023Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Обслуживание имеющихся серверов
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.00004 16H20V5H4.00004V16ZM13 18V20H17V22H7.00004V20H11V18H2.99204C2.86073 17.9992 2.73086 17.9725 2.60988 17.9215C2.4889 17.8704 2.37919 17.7959 2.28703 17.7024C2.19488 17.6088 2.12209 17.498 2.07284 17.3763C2.02359 17.2546 1.99885 17.1243 2.00004 16.993V4.007C2.00004 3.451 2.45504 3 2.99204 3H21.008C21.556 3 22 3.449 22 4.007V16.993C22 17.549 21.545 18 21.008 18H13Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Мы прекрасно работаем на подряде у системных интеграторов
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM9.71 19.667C8.72341 17.5743 8.15187 15.3102 8.027 13H4.062C4.25659 14.5389 4.89392 15.9882 5.89657 17.1717C6.89922 18.3552 8.22401 19.2221 9.71 19.667ZM10.03 13C10.181 15.439 10.878 17.73 12 19.752C13.1523 17.6766 13.8254 15.3695 13.97 13H10.03ZM19.938 13H15.973C15.8481 15.3102 15.2766 17.5743 14.29 19.667C15.776 19.2221 17.1008 18.3552 18.1034 17.1717C19.1061 15.9882 19.7434 14.5389 19.938 13ZM4.062 11H8.027C8.15187 8.68979 8.72341 6.42569 9.71 4.333C8.22401 4.77788 6.89922 5.64475 5.89657 6.8283C4.89392 8.01184 4.25659 9.4611 4.062 11ZM10.031 11H13.969C13.8248 8.6306 13.152 6.32353 12 4.248C10.8477 6.32345 10.1746 8.63052 10.03 11H10.031ZM14.29 4.333C15.2766 6.42569 15.8481 8.68979 15.973 11H19.938C19.7434 9.4611 19.1061 8.01184 18.1034 6.8283C17.1008 5.64475 15.776 4.77788 14.29 4.333Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Используем разные технологии
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 21V23H11V21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V6H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H13ZM4 19H20V8H4V19ZM13 10H18V12H13V10ZM13 14H18V16H13V14ZM9 10V13H12C12 13.5933 11.8241 14.1734 11.4944 14.6667C11.1648 15.1601 10.6962 15.5446 10.1481 15.7716C9.59987 15.9987 8.99667 16.0581 8.41473 15.9424C7.83279 15.8266 7.29824 15.5409 6.87868 15.1213C6.45912 14.7018 6.1734 14.1672 6.05764 13.5853C5.94189 13.0033 6.0013 12.4001 6.22836 11.8519C6.45542 11.3038 6.83994 10.8352 7.33329 10.5056C7.82664 10.1759 8.40666 10 9 10ZM2 3H22V5H2V3Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Мы прекрасно работаем на подряде у системных интеграторов
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comp-promotion__category__column">
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.10495 15.2102C7.7586 15.4693 8.30051 15.9497 8.63613 16.5676C8.97175 17.1855 9.07975 17.9016 8.9413 18.5909C8.80285 19.2803 8.42673 19.8992 7.87858 20.3396C7.33043 20.7799 6.64505 21.0138 5.94204 21.0005C5.23903 20.9871 4.56303 20.7273 4.032 20.2665C3.50098 19.8056 3.14864 19.1729 3.03648 18.4787C2.92432 17.7846 3.05945 17.0731 3.4183 16.4685C3.77715 15.8638 4.33692 15.4043 4.99995 15.1702V8.83023C4.33245 8.59432 3.76985 8.13003 3.41159 7.51942C3.05332 6.90881 2.92246 6.1912 3.04213 5.49344C3.16181 4.79567 3.52431 4.16268 4.06557 3.70635C4.60683 3.25002 5.29199 2.99974 5.99995 2.99974C6.7079 2.99974 7.39306 3.25002 7.93432 3.70635C8.47558 4.16268 8.83808 4.79567 8.95776 5.49344C9.07743 6.1912 8.94657 6.90881 8.58831 7.51942C8.23004 8.13003 7.66744 8.59432 6.99995 8.83023V12.0002C7.83595 11.3722 8.87395 11.0002 9.99995 11.0002H13.9999C14.6581 11.0003 15.2979 10.7839 15.821 10.3846C16.3441 9.98528 16.7215 9.42506 16.8949 8.79023C16.2381 8.53013 15.6941 8.04666 15.3587 7.42492C15.0233 6.80318 14.9179 6.08304 15.0612 5.39128C15.2045 4.69952 15.5873 4.08049 16.1421 3.64317C16.6969 3.20585 17.3882 2.97827 18.0943 3.00051C18.8004 3.02275 19.476 3.29338 20.0022 3.76475C20.5284 4.23611 20.8714 4.87801 20.9709 5.57741C21.0704 6.27682 20.92 6.9889 20.5461 7.5883C20.1722 8.1877 19.5988 8.63598 18.9269 8.85423C18.7255 10.0149 18.1209 11.0672 17.2195 11.8257C16.3182 12.5842 15.178 13.0001 13.9999 13.0002H9.99995C9.34184 13.0002 8.70196 13.2165 8.17885 13.6158C7.65575 14.0152 7.27841 14.5754 7.10495 15.2102ZM5.99995 17.0002C5.73473 17.0002 5.48038 17.1056 5.29284 17.2931C5.1053 17.4807 4.99995 17.735 4.99995 18.0002C4.99995 18.2654 5.1053 18.5198 5.29284 18.7073C5.48038 18.8949 5.73473 19.0002 5.99995 19.0002C6.26516 19.0002 6.51952 18.8949 6.70705 18.7073C6.89459 18.5198 6.99995 18.2654 6.99995 18.0002C6.99995 17.735 6.89459 17.4807 6.70705 17.2931C6.51952 17.1056 6.26516 17.0002 5.99995 17.0002ZM5.99995 5.00023C5.73473 5.00023 5.48038 5.10558 5.29284 5.29312C5.1053 5.48066 4.99995 5.73501 4.99995 6.00023C4.99995 6.26544 5.1053 6.5198 5.29284 6.70733C5.48038 6.89487 5.73473 7.00023 5.99995 7.00023C6.26516 7.00023 6.51952 6.89487 6.70705 6.70733C6.89459 6.5198 6.99995 6.26544 6.99995 6.00023C6.99995 5.73501 6.89459 5.48066 6.70705 5.29312C6.51952 5.10558 6.26516 5.00023 5.99995 5.00023ZM17.9999 5.00023C17.7347 5.00023 17.4804 5.10558 17.2928 5.29312C17.1053 5.48066 16.9999 5.73501 16.9999 6.00023C16.9999 6.26544 17.1053 6.5198 17.2928 6.70733C17.4804 6.89487 17.7347 7.00023 17.9999 7.00023C18.2652 7.00023 18.5195 6.89487 18.7071 6.70733C18.8946 6.5198 18.9999 6.26544 18.9999 6.00023C18.9999 5.73501 18.8946 5.48066 18.7071 5.29312C18.5195 5.10558 18.2652 5.00023 17.9999 5.00023Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Обслуживание имеющихся серверов
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.00004 16H20V5H4.00004V16ZM13 18V20H17V22H7.00004V20H11V18H2.99204C2.86073 17.9992 2.73086 17.9725 2.60988 17.9215C2.4889 17.8704 2.37919 17.7959 2.28703 17.7024C2.19488 17.6088 2.12209 17.498 2.07284 17.3763C2.02359 17.2546 1.99885 17.1243 2.00004 16.993V4.007C2.00004 3.451 2.45504 3 2.99204 3H21.008C21.556 3 22 3.449 22 4.007V16.993C22 17.549 21.545 18 21.008 18H13Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Мы прекрасно работаем на подряде у системных интеграторов
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM9.71 19.667C8.72341 17.5743 8.15187 15.3102 8.027 13H4.062C4.25659 14.5389 4.89392 15.9882 5.89657 17.1717C6.89922 18.3552 8.22401 19.2221 9.71 19.667ZM10.03 13C10.181 15.439 10.878 17.73 12 19.752C13.1523 17.6766 13.8254 15.3695 13.97 13H10.03ZM19.938 13H15.973C15.8481 15.3102 15.2766 17.5743 14.29 19.667C15.776 19.2221 17.1008 18.3552 18.1034 17.1717C19.1061 15.9882 19.7434 14.5389 19.938 13ZM4.062 11H8.027C8.15187 8.68979 8.72341 6.42569 9.71 4.333C8.22401 4.77788 6.89922 5.64475 5.89657 6.8283C4.89392 8.01184 4.25659 9.4611 4.062 11ZM10.031 11H13.969C13.8248 8.6306 13.152 6.32353 12 4.248C10.8477 6.32345 10.1746 8.63052 10.03 11H10.031ZM14.29 4.333C15.2766 6.42569 15.8481 8.68979 15.973 11H19.938C19.7434 9.4611 19.1061 8.01184 18.1034 6.8283C17.1008 5.64475 15.776 4.77788 14.29 4.333Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Используем разные технологии
+                            </div>
+                        </div>
+                        <div class="comp-promotion__category__column__item">
+                            <svg class="comp-promotion__category__column__item__icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 21V23H11V21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V6H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H13ZM4 19H20V8H4V19ZM13 10H18V12H13V10ZM13 14H18V16H13V14ZM9 10V13H12C12 13.5933 11.8241 14.1734 11.4944 14.6667C11.1648 15.1601 10.6962 15.5446 10.1481 15.7716C9.59987 15.9987 8.99667 16.0581 8.41473 15.9424C7.83279 15.8266 7.29824 15.5409 6.87868 15.1213C6.45912 14.7018 6.1734 14.1672 6.05764 13.5853C5.94189 13.0033 6.0013 12.4001 6.22836 11.8519C6.45542 11.3038 6.83994 10.8352 7.33329 10.5056C7.82664 10.1759 8.40666 10 9 10ZM2 3H22V5H2V3Z"
+                                    fill="#A2A2FC" />
+                            </svg>
+                            <div class="comp-promotion__category__column__item__text">
+                                Мы прекрасно работаем на подряде у системных интеграторов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-clients-think-about-us">
+            <div class="container">
+                <div class="what-clients-think-about-us__heading">Что о нас думают клиенты</div>
+                <div class="what-clients-think-about-us__quotation">
+                    <div class="what-clients-think-about-us__quotation__content">
+                        <svg class="what-clients-think-about-us__quotation__content__quote" viewBox=" 0 0 38 38"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31.1729 35.2944C35.6814 34.3283 38 31.108 38 25.7622C38 22.9927 37.678 22.2199 35.939 20.2232C33.7492 17.9046 29.7559 16.4232 27.5017 17.1317C26.5356 17.4538 26.4068 17.1961 26.7932 15.6504C26.9864 14.6843 28.339 11.4639 29.6915 8.56562C31.0441 5.66732 32.2034 2.96223 32.2034 2.57579C32.2034 1.41647 26.6 5.79613 24.861 8.308C20.8678 14.0402 18.5491 23.7656 19.9017 28.8538C21.1898 33.5555 26.0847 36.3893 31.1729 35.2944Z"
+                                fill="#DFE0FF" />
+                            <path
+                                d="M13.2676 34.779C14.0404 34.4569 15.4574 33.1688 16.4235 31.9451C20.9964 25.9552 17.0032 17.4535 9.46757 17.1959C7.79299 17.1315 6.44045 17.0671 6.44045 17.0027C6.44045 16.101 9.53197 8.50101 10.9489 5.98914C13.1388 2.12474 12.5591 1.60948 8.95231 4.18575C3.22011 8.4366 -0.000232172 15.9078 -0.000232966 24.9891C-0.000233433 30.3349 1.15909 32.718 4.50824 34.4569C6.56926 35.4874 11.0777 35.6807 13.2676 34.779Z"
+                                fill="#DFE0FF" />
+                        </svg>
+                        <div id="quotation__content__text"
+                            class="what-clients-think-about-us__quotation__content__text">
+                        </div>
+                        <svg class="what-clients-think-about-us__quotation__content__quote close" viewBox="0 0 38 38"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.82712 2.70459C2.31864 3.67069 0 6.89103 0 12.2368C0 15.0063 0.322034 15.7792 2.06102 17.7758C4.25085 20.0944 8.24407 21.5758 10.4983 20.8673C11.4644 20.5453 11.5932 20.8029 11.2068 22.3487C11.0136 23.3148 9.66102 26.5351 8.30848 29.4334C6.95593 32.3317 5.79661 35.0368 5.79661 35.4232C5.79661 36.5826 11.4 32.2029 13.139 29.691C17.1322 23.9588 19.4509 14.2334 18.0983 9.14527C16.8102 4.44357 11.9153 1.60967 6.82712 2.70459Z"
+                                fill="#DFE0FF" />
+                            <path
+                                d="M24.7324 3.22005C23.9596 3.54209 22.5426 4.83022 21.5765 6.05395C17.0036 12.0438 20.9968 20.5455 28.5324 20.8031C30.207 20.8675 31.5596 20.9319 31.5596 20.9963C31.5596 21.898 28.468 29.498 27.0511 32.0099C24.8612 35.8743 25.4409 36.3895 29.0477 33.8133C34.7799 29.5624 38.0002 22.0912 38.0002 13.0099C38.0002 7.66412 36.8409 5.28107 33.4918 3.54209C31.4307 2.51158 26.9223 2.31836 24.7324 3.22005Z"
+                                fill="#DFE0FF" />
+                        </svg>
+                    </div>
+                    <div class="what-clients-think-about-us__quotation__arrow">
+                        <svg viewBox="0 0 47 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.6204 27.8667C25.3708 27.0799 26.3891 26.2408 27.0859 25.2443C28.533 23.1464 29.8729 20.996 31.2129 18.8457C33.7319 14.7548 36.251 10.6114 38.9844 6.1534C35.447 7.30725 32.8208 10.2443 28.6402 9.56249C29.0154 8.93312 29.1226 8.40864 29.3906 8.30375C33.5711 6.62543 37.2157 4.10795 40.6459 1.32824C43.4866 -0.927004 44.9337 -0.297635 45.3089 3.11145C45.6841 6.67788 46.4344 10.2443 46.9704 13.8107C47.0776 14.3877 46.8632 15.017 46.8096 15.7513C44.5049 14.7023 44.5049 14.7023 42.5754 6.88767C42.1467 7.56949 41.7715 8.09396 41.4499 8.61844C38.2877 14.0205 35.179 19.4226 31.9096 24.7723C30.8377 26.503 29.5513 28.1289 28.1042 29.545C25.5316 32.0625 22.6909 31.9576 20.279 29.2827C19.0463 27.9191 18.1352 26.2408 17.3312 24.5625C16.4201 22.6744 15.8305 20.6289 15.0265 18.6883C14.437 17.3247 13.6866 16.0135 12.9898 14.5974C11.3283 15.2268 10.6852 16.4331 9.9348 17.5345C6.77257 22.2023 4.4143 27.1848 2.64559 32.5345C2.43121 33.1638 2.32401 33.8457 1.94883 34.4226C1.73444 34.7373 1.14487 34.9995 0.716095 34.9995C0.501706 34.9995 0.0729278 34.4226 0.0193307 34.1079C-0.0342664 33.2163 0.0193356 32.2198 0.233724 31.3806C1.73444 25.3492 4.25351 19.7373 7.84451 14.6499C8.54128 13.6009 9.45243 12.6569 10.4172 11.8702C12.1859 10.4541 13.9546 10.5065 15.4017 12.2373C16.5808 13.6534 17.4384 15.3317 18.1888 17.01C19.3143 19.4751 20.1183 22.045 21.2438 24.51C21.887 25.8212 22.6373 27.1848 24.6204 27.8667Z"
+                                fill="#A2A2FC" />
+                        </svg>
+                    </div>
+                    <div class="what-clients-think-about-us__quotation__person">
+                        <div class="swiper what-clients-think-about-us__quotation__person__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-value="Выражаем признательность агентству Tosapport за плодотворную и качественную работу по
+                            созданию
+                            интернет-магазина для
+                            нашего проекта MaskShop. Изначально мы пришли на поддержку и доработку магазина на шаблоне,
+                            но
+                            после нескольких месяцев
+                            поняли, что такая работа не принесет нужного...">
+                                    <div class="what-clients-think-about-us__quotation__person__list__item">
+                                        <img src="assets/images/what-clients-think-about-us/2.png" alt=""
+                                            class="what-clients-think-about-us__quotation__person__list__item__photo">
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__name">
+                                            Александров
+                                            Р.
+                                        </div>
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__note">
+                                            Company
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-value="Правый">
+                                    <div class="what-clients-think-about-us__quotation__person__list__item">
+                                        <img src="assets/images/what-clients-think-about-us/1.png" alt=""
+                                            class="what-clients-think-about-us__quotation__person__list__item__photo">
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__name">
+                                            Александров
+                                            Р.
+                                        </div>
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__note">
+                                            Company
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide" data-value="Левый">
+                                    <div class="what-clients-think-about-us__quotation__person__list__item">
+                                        <img src="assets/images/what-clients-think-about-us/3.png" alt=""
+                                            class="what-clients-think-about-us__quotation__person__list__item__photo">
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__name">
+                                            Александров
+                                            Р.
+                                        </div>
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__note">
+                                            Company
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-value="Левый">
+                                    <div class="what-clients-think-about-us__quotation__person__list__item">
+                                        <img src="assets/images/what-clients-think-about-us/3.png" alt=""
+                                            class="what-clients-think-about-us__quotation__person__list__item__photo">
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__name">
+                                            Александров
+                                            Р.
+                                        </div>
+                                        <div class="what-clients-think-about-us__quotation__person__list__item__note">
+                                            Company
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-navigation">
+                                <div
+                                    class="swiper-button-prev what-clients-think-about-us__quotation__person__page-controls__prev">
+                                    <svg viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.499512" width="54" height="54" rx="27" fill="white" />
+                                        <rect x="0.5" y="0.499512" width="54" height="54" rx="27" stroke="#DFE0FF" />
+                                        <path
+                                            d="M20 28.0007C20 27.9407 20.0254 27.883 20.0738 27.8368L26.4354 22.067C26.5346 21.977 26.695 21.977 26.7942 22.067L27.8121 22.9902C27.9113 23.0802 27.9113 23.2256 27.8121 23.3156L23.6668 27.0775L33.7455 27.0775C33.888 27.0775 34 27.179 34 27.3083L34 28.693C34 28.8223 33.888 28.9238 33.7455 28.9238H23.6668L27.8121 32.6834C27.9113 32.7734 27.9113 32.9188 27.8121 33.0088L26.7942 33.932C26.695 34.022 26.5346 34.022 26.4354 33.932L20.0738 28.1622C20.0254 28.1207 20 28.063 20 28.0007Z"
+                                            fill="#7174D9" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.499512" width="54" height="54" rx="27" fill="white" />
+                                        <rect x="0.5" y="0.499512" width="54" height="54" rx="27" stroke="#DFE0FF" />
+                                        <path
+                                            d="M34 27.9984C34 28.0584 33.9746 28.1161 33.9262 28.1622L27.5646 33.932C27.4654 34.022 27.305 34.022 27.2058 33.932L26.1879 33.0088C26.0887 32.9188 26.0887 32.7734 26.1879 32.6834L30.3332 28.9215L20.2545 28.9215C20.112 28.9215 20 28.82 20 28.6907L20 27.306C20 27.1767 20.112 27.0752 20.2545 27.0752L30.3332 27.0752L26.1879 23.3156C26.0887 23.2256 26.0887 23.0802 26.1879 22.9902L27.2058 22.067C27.305 21.977 27.4654 21.977 27.5646 22.067L33.9262 27.8368C33.9746 27.8783 34 27.936 34 27.9984Z"
+                                            fill="#7174D9" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="acquaintance">
+            <div class="container">
+                <div class="acquaintance__heading">Познакомьтесь с нами</div>
+                <div class="swiper acquaintance__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="acquaintance__list__item">
+                                <img src="./assets/images/acquaintance/Photo.png"
+                                    class="acquaintance__list__item__photo"></img>
+                                <div class="acquaintance__list__item__name">Малашкевия Алексей</div>
+                                <div class="acquaintance__list__item__profession">Программист</div>
+                                <div class="acquaintance__list__item__experience">Опыт работы более 10 лет</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="acquaintance__list__item">
+                                <img src="./assets/images/acquaintance/Photo.png"
+                                    class="acquaintance__list__item__photo"></img>
+                                <div class="acquaintance__list__item__name">Малашкевия Алексей</div>
+                                <div class="acquaintance__list__item__profession">Программист</div>
+                                <div class="acquaintance__list__item__experience">Опыт работы более 10 лет</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="acquaintance__list__item">
+                                <img src="./assets/images/acquaintance/Photo.png"
+                                    class="acquaintance__list__item__photo"></img>
+                                <div class="acquaintance__list__item__name">Малашкевия Алексей</div>
+                                <div class="acquaintance__list__item__profession">Программист</div>
+                                <div class="acquaintance__list__item__experience">Опыт работы более 10 лет</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="acquaintance__list__item">
+                                <img src="./assets/images/acquaintance/Photo.png"
+                                    class="acquaintance__list__item__photo"></img>
+                                <div class="acquaintance__list__item__name">Малашкевия Алексей</div>
+                                <div class="acquaintance__list__item__profession">Программист</div>
+                                <div class="acquaintance__list__item__experience">Опыт работы более 10 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="acquaintance__note">и еще 15 специалистов в штате</div>
+            </div>
+        </section>
+
+        <section class="freq-ask-questions">
+            <div class="container">
+                <div class="freq-ask-questions__heading">Часто задаваемые вопросы</div>
+                <div class="freq-ask-questions__list">
+                    <div class="freq-ask-questions__list__column">
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    Что входит в стоимость SEO-продвижения?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content"></div>
+                        </button>
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    Как скоро мы увидим результат от SEO-продвижения?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content"></div>
+                        </button>
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    По каким KPI мы можем проверять эффективность продвижения нашего бизнеса в
+                                    интернете?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content"></div>
+                        </button>
+                    </div>
+                    <div class="freq-ask-questions__list__column">
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    Изучил ваши тарифы, хочу убрать ряд услуг и поставить другие. Это возможно?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content">
+                                Да, нужно просто понимать вашу задачу, у нас достаточно гибкая команда и мы без проблем
+                                скорректируем состав и порядок
+                                работ по сайту.
+                            </div>
+                        </button>
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    Почему стоимость вашей работы дешевле других агенств?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content"></div>
+                        </button>
+                        <button class="freq-ask-questions__list__item">
+                            <div class="freq-ask-questions__list__item__heading">
+                                <div class="freq-ask-questions__list__item__heading__text">
+                                    Почему у вас лендинг вместо сайта?
+                                </div>
+                                <svg class="freq-ask-questions__list__item__heading__icon" viewBox="0 0 18 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0423 15.4885C10.0423 16.0748 9.58632 16.5308 9 16.5308C8.70684 16.5308 8.46255 16.4168 8.26711 16.2214C8.07167 16.0259 7.95766 15.7816 7.95766 15.4885L7.95766 9.52762L1.99679 9.52762C1.70364 9.52762 1.45934 9.41361 1.2639 9.21817C1.06846 9.02274 0.954456 8.77844 0.954456 8.48528C0.954456 7.89897 1.41048 7.44294 1.99679 7.44294L7.95766 7.44294L7.95766 1.48207C7.95766 0.895759 8.41369 0.439736 9 0.439736C9.58632 0.439736 10.0423 0.895759 10.0423 1.48207L10.0423 7.44294L16.0032 7.44294C16.5895 7.44294 17.0455 7.89897 17.0455 8.48528C17.0455 9.0716 16.5895 9.52762 16.0032 9.52762L10.0423 9.52762L10.0423 15.4885Z"
+                                        fill="#B4B7CF" />
+                                </svg>
+                                <div></div>
+                            </div>
+                            <div class="freq-ask-questions__list__item__content"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions-left">
+            <div class="container">
+                <div class="questions-left__left-column">
+                    <div class="questions-left__left-column__heading">Остались вопросы</div>
+                    <div class="questions-left__left-column__supheading">
+                        <span>Оставьте заявку</span> и мы перезвоним вам в течение 15 минут!
+                    </div>
+                    <form class="questions-left__left-column__form">
+                        <div class="questions-left__left-column__form__text-inputs">
+                            <input type="text" class="questions-left__left-column__form__text-inputs__name"
+                                placeholder="Ваше имя*">
+                            <input type="text" class="questions-left__left-column__form__text-inputs__phone"
+                                placeholder="+7 800 555 35 35">
+                        </div>
+                        <div class="questions-left__left-column__form__radio-buttons">
+                            <div class="questions-left__left-column__form__radio-buttons__call">
+                                <input type="radio" class="questions-left__left-column__form__radio-input"
+                                    name="radio-input" id="Call" checked>
+                                <label class="questions-left__left-column__form__radio-label" for="Call">Звонок</label>
+                            </div>
+                            <div class="questions-left__left-column__form__radio-buttons__whatsapp">
+                                <input type="radio" class="questions-left__left-column__form__radio-input"
+                                    name="radio-input" id="WhatsApp">
+                                <label class="questions-left__left-column__form__radio-label"
+                                    for="WhatsApp">Ваттсап</label>
+                            </div>
+                            <div class="questions-left__left-column__form__radio-buttons__telegram">
+                                <input type="radio" class="questions-left__left-column__form__radio-input"
+                                    name="radio-input" id="Telegram">
+                                <label class="questions-left__left-column__form__radio-label"
+                                    for="Telegram">Телеграм</label>
+                            </div>
+                        </div>
+                        <button class="questions-left__left-column__form__confirm">Оставить заявку</button>
+                    </form>
+                    <div class="questions-left__left-column__note">
+                        Нажимая кнопку “Отправить заявку” вы соглашаетесь с условиями обработки персональных данных
+                    </div>
+                </div>
+                <div class="questions-left__right-column">
+                    <div class="questions-left__right-column__contacts">
+                        <div class="questions-left__right-column__contacts__item">
+                            <div class="questions-left__right-column__contacts__item__heading phone">Телефон</div>
+                            <div class="questions-left__right-column__contacts__item__content">8-800-555-35-35</div>
+                        </div>
+                        <div class="questions-left__right-column__contacts__item">
+                            <div class="questions-left__right-column__contacts__item__heading email">Email</div>
+                            <div class="questions-left__right-column__contacts__item__content">inf@tosappotr.ru</div>
+                        </div>
+                        <div class="questions-left__right-column__contacts__item">
+                            <div class="questions-left__right-column__contacts__item__heading address">Адрес</div>
+                            <div class="questions-left__right-column__contacts__item__content">
+                                г. Волгоград ул. Космонавтов 22, оф 1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-left__right-column__note">
+                        На связи с 8:00 до 01:00 по Мск, это позволяет максимально быстро подключаться к задачам с
+                        блокирующим приоритетом
+                    </div>
+                    <iframe class="questions-left__right-column__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.116416253882!2d44.50608944251009!3d48.760573096996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411aca67ca9df865%3A0x7eadbfc2ee407119!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiwgMjIsIDEsINCS0L7Qu9Cz0L7Qs9GA0LDQtCwg0JLQvtC70LPQvtCz0YDQsNC00YHQutCw0Y8g0L7QsdC7LiwgNDAwMTE3!5e0!3m2!1sru!2sru!4v1725304097442!5m2!1sru!2sru"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__columns">
+                    <div class="footer__columns__left-column">
+                        <a href="" class="footer__columns__left-column__item">Услуги</a>
+                        <a href="" class="footer__columns__left-column__item">Технологии</a>
+                        <a href="" class="footer__columns__left-column__item">Продвижение</a>
+                    </div>
+                    <div class="footer__columns__center-column">
+                        <a href="" class="footer__columns__left-column__item">Портфолио</a>
+                        <a href="" class="footer__columns__left-column__item">Отзывы</a>
+                        <a href="" class="footer__columns__left-column__item">О компании</a>
+                    </div>
+                    <div class="footer__columns__right-column">
+                        <div class="footer__columns__right-column__contacts-item">
+                            <div class="footer__columns__right-column__contacts-item__heading phone1">Телефон</div>
+                            <div class="footer__columns__right-column__contacts-item__content">8-800-555-35-35</div>
+                        </div>
+                        <div class="footer__columns__right-column__contacts-item">
+                            <div class="footer__columns__right-column__contacts-item__heading email1">Email</div>
+                            <div class="footer__columns__right-column__contacts-item__content">inf@tosappotr.ru</div>
+                        </div>
+                        <div class="footer__columns__right-column__contacts-item">
+                            <div class="footer__columns__right-column__contacts-item__heading address1">Адрес</div>
+                            <div class="footer__columns__right-column__contacts-item__content">
+                                г. Волгоград ул. Космонавтов 22, оф 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__policy">2023 «ToSupport.ru» <span>Политика конфиденциальности</span></div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+<script src="./js.js"></script>
+
+</html>
