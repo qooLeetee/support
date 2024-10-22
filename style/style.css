@@ -1272,7 +1272,7 @@ html {
           text-decoration-skip-ink: none;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1919px) {
   body,
   html {
     font-size: 0.2666666667vw;
